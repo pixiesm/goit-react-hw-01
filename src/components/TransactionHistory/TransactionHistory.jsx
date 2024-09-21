@@ -16,9 +16,9 @@ function TransactionHistory({ items }) {
           {items.map((item) => {
             return (
               <tr key={item.id}>
-                <td>{item.type}</td>
-                <td>{item.amount}</td>
-                <td>{item.currency}</td>
+                <td className={s.row}>{item.type}</td>
+                <td className={s.row}>{item.amount}</td>
+                <td className={s.row}>{item.currency}</td>
               </tr>
             );
           })}
